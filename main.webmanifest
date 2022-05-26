@@ -1,0 +1,15 @@
+{
+  "background_color": "#0187D0",
+  "description": "YouTube Video to Audio Converter and Downloader. ",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./icon/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "YouTube Downloader Lite",
+  "short_name": "Yt Downloader",
+  "start_url": "/index.html"
+}
