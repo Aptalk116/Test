@@ -3,64 +3,163 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Youtube video downloader</title>
-  <link rel="manifest" href="./main.webmainfest">
-  <link rel="icon" href="./icon/icon-192x192.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="main.webmanifest">
+  <link rel="icon" href="/icon/icon-192x192.png">
 
-  <!-- Custom css -->
-  <link rel="stylesheet" href="./style.css">
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>YouTube audio video downloader</title>
+
+  <!-- Custom Styles -->
+  <style>
+  /* Google font */
+  @font-face {font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');} 
+  
+  /*
+ * (c) Atul
+!*/
+
+/* Global css */
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #877EFF
+}
+ul li{
+  list-style: none;
+}
+h1, h2, h3, h4, p{
+  padding: 10px;
+}
+
+:root{
+  --prmc: #fff;
+  --secndc: #2b2b2b;
+  --grc: #515661;
+  --lightc: #CFFFEA;
+  
+  --mainfont: 'Poppins';
+}
+.is-dark{
+  --prmc: #2b2b2b;
+  --secndc: #fff;
+}
+
+button{
+  font-size: normal;
+  padding: 10px 20px;
+  color: var(--prmc);
+  background-color: var(--lightc);
+  border: 1px solid #AD8FFF;
+  border-radius: 17px;
+}
+
+/* Container */
+.container{
+  font-family: var(--mainfont), sans-serif;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Nav */
+nav{
+  color: var(--secndc);
+  background-color: var(--prmc);
+  box-shadow: 0 3px 5px rgb(0,0,0,.15);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+.logo{
+  padding: 20px 0 20px 0;
+}
+.navbar li{
+  display: inline-block;
+  padding: 0 5px 30px 5px;
+}
+
+section{
+  margin: 10px 0 10px 0;
+  padding: 0px;
+  background-color: var(--prmc);
+  color: var(--secndc);
+}
+.main-iframe{
+  width: 100%;
+  padding: 0!important
+}
+
+/* Footer */
+footer{
+  color: var(--dc);
+  background-color: var(--wc);
+  box-shadow: 0 -3px 5px rgb(0,0,0,.15);
+/*  bottom: 0px;
+  position: fixed;
+  z-index: 1; */
+  width: 100%;
+  height: auto;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+.copyright-area{
+  font-size: .9rem;
+}
+
+  </style>
+  <link rel="stylesheet" href="/srtyle.css">
 </head>
 
 <body>
-  <div class="nav">
-    <a class="logo" href="/">
-      <!--<img class="nav-logo" src="/images/KrishnaBani-logo.png" alt="logo"/>-->
-      Yt Downloader
-    </a>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">DMCA</a></li>
-    </ul>
-  </div>
-  <!-- main section -->
+  <!-- Main Container -->
   <div class="container">
-    <div class="main-f">
-      <iframe class="main-iframe" loading="lazy" src="https://convert.ytutils.com" frameborder="0">https://convert.ytutils.com</iframe>
-    </div>
+    <!-- Nav container -->
+    <nav>
+      <div class="logo">
+        <h1>YouTube Audio Video Download</h1>
+      </div>
+      <ul class="navbar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <section>
+      <h1>WELCOME</h1>
+      <p>YouTube Video converter and downloader
+      </p>
+      
+      <iframe class="main-iframe" src="https://convert.ytutils.com" frameborder="0">https://convert.ytutils.com</iframe>
+      
+      <p>It is An Open Source YouTube video and audio Downloader</p>
+      
+    </section>
+    
+  
 
-    <h3>What is Lorem Ipsum?</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-      <h3>What is Lorem Ipsum?</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-
-        <div class="mob-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">menu</a></li>
-          </ul>
-        </div>
-
-
+    <footer>
+      <p class="copyright-area">
+        Copyright &copy; <span id="getYear"></span> <a href="/index.html">Atul</a> | All Rights Resereved.
+      </p>
+    </footer>
   </div>
-  <!-- footer -->
-  <div class="footer">
-    <p>&copy; <span id="getYear"></span> <a href="/">Atul</a></p>
-  </div>
 
-  <!-- main script -->
-  <script src="/main.js"></script>
+
+  
+  <!-- Project -->
+  <script>
+    // Automatic year update
+var a = new Date();
+var b = a.getFullYear();
+document.getElementById('getYear').innerHTML = b;
+  </script>
+  <script src="/maian.js"></script>
 </body>
 
 </html>
