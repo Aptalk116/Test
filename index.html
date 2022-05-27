@@ -158,11 +158,11 @@ footer{
 var a = new Date();
 var b = a.getFullYear();
 document.getElementById('getYear').innerHTML = b;
-    // Se.js
+    
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('/Test/sw.js')
-    .then(() => { console.log('Service Worker Registered'); });
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js');
+  });
 }
   </script>
   <script src="/maian.js"></script>
