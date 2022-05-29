@@ -7,165 +7,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="./main.webmanifest">
   <link rel="icon" href="./icon/icon-192x192.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
 
-  <title>YouTube audio video downloader</title>
+  <title>YouTube audio & video downloader</title>
 
   <!-- Custom Styles -->
-  <style>
-  /* Google font */
-  @font-face {font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');} 
-  
-  /*
- * (c) Atul
-!*/
-
-/* Global css */
-*, *::after, *::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a{
-  text-decoration: none;
-  color: #877EFF
-}
-ul li{
-  list-style: none;
-}
-h1, h2, h3, h4, p{
-  padding: 10px;
-}
-
-:root{
-  --prmc: #fff;
-  --secndc: #2b2b2b;
-  --grc: #515661;
-  --lightc: #CFFFEA;
-  
-  --mainfont: 'Poppins';
-}
-.is-dark{
-  --prmc: #2b2b2b;
-  --secndc: #fff;
-}
-
-button{
-  font-size: normal;
-  padding: 10px 20px;
-  color: var(--prmc);
-  background-color: var(--lightc);
-  border: 1px solid #AD8FFF;
-  border-radius: 17px;
-}
-
-/* Container */
-.container{
-  font-family: var(--mainfont), sans-serif;
-  font-size: 1rem;
-  width: 100%;
-}
-
-/* Nav */
-nav{
-  color: var(--secndc);
-  background-color: var(--prmc);
-  box-shadow: 0 3px 5px rgb(0,0,0,.15);
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-}
-.logo{
-  padding: 20px 0 20px 0;
-}
-.navbar li{
-  display: inline-block;
-  padding: 0 5px 30px 5px;
-}
-
-section{
-  margin: 10px 0 10px 0;
-  padding: 0px;
-  background-color: var(--prmc);
-  color: var(--secndc);
-}
-.main-iframe{
-  width: 100%;
-  padding: 0!important
-}
-
-/* Footer */
-footer{
-  color: var(--dc);
-  background-color: var(--wc);
-  box-shadow: 0 -3px 5px rgb(0,0,0,.15);
-/*  bottom: 0px;
-  position: fixed;
-  z-index: 1; */
-  width: 100%;
-  height: auto;
-  padding: 20px 0 20px 0;
-  text-align: center;
-  border-radius: 20px 20px 0 0;
-}
-.copyright-area{
-  font-size: .9rem;
-}
-
-  </style>
-  <link rel="stylesheet" href="/srtyle.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
+
   <!-- Main Container -->
   <div class="container">
     <!-- Nav container -->
     <nav>
       <div class="logo">
-        <h1>YouTube Audio Video Download</h1>
+        <h1 class="logo-text hidden">YouTube Audio Video Downloader</h1>
+        <!-- logo img here -->
+        <a href="/Test"><img class="logo-img" src="/images/Picsart_22-05-29_20-27-26-380.png" alt="Logo Image" /></a>
       </div>
-      <ul class="navbar">
-        <li><a href="/test/index.html">Home</a></li>
+      
+      <a class="nav-link hidden" href="#more">More</a>
+      
+    </nav>
+
+    <!-- main section -->
+    <section>
+      <!-- main tool title -->
+      <h1 class="tool-title">Download Audio and Video Easily</h1>
+      <!-- main tool -->
+      <div class="section-con">
+        <div class="main-tool">
+          <iframe class="main-iframe" src="https://convert.ytutils.com" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="steps">
+        <h2>Step 1: Paste the link</h2>
+        <p>Paste the link of the video you want to download here</p>
+        <br /><p></p>
+        <h2>Step 2: Select File Format</h2>
+        <p>Select the file format that you want to download here</p>
+        <br /><p></p>
+        <h2>Step 3: Download</h2>
+        <p>Get the file in the Download folder in MP3, MP4 format</p>
+      </div>
+    
+    <span class="separate hidden"></span>
+    
+    <!-- About arae -->
+    <div class="about-area hidden">
+      <h2 class="about-title">About Yt Downloader</h2>
+      <p class="about-text">ifif</p>
+      
+    </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- Footer nav -->
+      <ul class="navbar hidden">
+        <li><a href="/test">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
-    
-    <section>
-      <h1>WELCOME</h1>
-      <p>YouTube Video converter and downloader
-      </p>
-      
-      <iframe class="main-iframe" src="https://convert.ytutils.com" frameborder="0">https://convert.ytutils.com</iframe>
-      
-      <p>It is An Open Source YouTube video and audio Downloader</p>
-      
-    </section>
-    
-  
 
-    <footer>
+      <!-- Copyright Area -->
       <p class="copyright-area">
-        Copyright &copy; <span id="getYear"></span> <a href="/index.html">Atul</a> | All Rights Resereved.
+        Made With &#10084; by <a href="/Test">Aptalk116</a> | &copy; <span id="getYear"></span> All Rights Resereved.
       </p>
     </footer>
   </div>
 
 
-  
-  <!-- Project -->
-  <script>
-    // Automatic year update
-var a = new Date();
-var b = a.getFullYear();
-document.getElementById('getYear').innerHTML = b;
-    
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js');
-  });
-}
-  </script>
-  <script src="/maian.js"></script>
-</body>
 
+  <!-- Project Script -->
+  <script src="/main.js"></script>
+</body>
 </html>
