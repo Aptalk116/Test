@@ -6,7 +6,7 @@ document.getElementById('getYear').innerHTML = b;
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/pwa-examples/a2hs/sw.js')
+    .register('/Test/sw.js')
     .then(() => { console.log('Service Worker Registered'); });
 }
 
