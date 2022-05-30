@@ -1,7 +1,7 @@
 {
   "background_color": "#0187D0",
   "description": "YouTube Video to Audio Converter and Downloader. ",
-  "display": "minimal-ui",
+  "display": "standalone",
   "icons": [
     {
       "src": "./icon/icon-192x192.png",
